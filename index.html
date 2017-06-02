@@ -5,10 +5,39 @@
     <title>VR</title>
     <meta name="description" content="Panorama — A-Frame">
     <script src="aframe.min.js"></script>
+    <script src="https://rawgit.com/bryik/aframe-bmfont-text-component/master/dist/aframe-bmfont-text-component.min.js"></script>
+    <script src="https://rawgit.com/gasolin/aframe-href-component/master/dist/aframe-href-component.min.js"></script>
   </head>
   <body>
-    <a-scene>
-      <a-sky src="1.jpg" rotation="0 -120 0"></a-sky>
+    <a-scene antialias="false">
+      <a-entity>
+       <a-camera>
+         <a-cursor color="#4CC3D9"></a-cursor>
+       </a-camera>
+     </a-entity>
+    <!-- ROAD -->
+
+      <a-sky color=rgb(256,256,256) rotation="0 0 0"></a-sky>
+      <a-image src="1.jpg" width="11" height="80" rotation="90 0 0" position="0 0.5 -30"></a-image>
+      <a-image src="1.jpg" width="11" height="80" rotation="90 90 0" position="45.5 0.5 -30"></a-image>
+      <a-box color="purple" src="#texture"depth="3" height="6" width="0.5" position="-5 0.5 -9"></a-box>
+      <a-box color="red" src="#texture"depth="3" height="17" width="0.5" position="-5 0.5 -12"></a-box>
+     <a-box color="blue" src="#texture"depth="3" height="26" width="0.5" position="-5 0.5 -15"></a-box>
+      <a-box color="green" src="#texture"depth="3" height="16" width="0.5" position="-5 0.5 -18"></a-box>
+      <a-box color="black" src="#texture"depth="3" height="39" width="0.5" position="-5 0.5 -21"></a-box>
+      <a-box color="yellow" src="#texture"depth="3" height="19" width="0.5" position="-5 0.5 -6"></a-box>
+      <a-box color="orange" src="#texture"depth="3" height="10" width="0.5" position="-5 0.5 -3"></a-box>
+      <a-box color="green" src="#texture"depth="3" height="52" width="0.5" position="-5 0.5 -24"></a-box>
+      <a-box color="yellow" src="#texture"depth="3" height="17" width="0.5" position="-5 0.5 -27"></a-box>
+      <a-box color="purple" src="#texture"depth="3" height="54" width="0.5" position="-5 0.5 -30"></a-box>
+      <a-box color="orange" src="#texture"depth="3" height="59" width="0.5" position="-5 0.5 -33"></a-box>
+      <a-box color="green" src="#texture"depth="3" height="13" width="0.5" position="-5 0.5 -36"></a-box>
+      <a-box color="red" src="#texture"depth="3" height="22" width="0.5" position="-5 0.5 -39"></a-box>
+ <!--road 2 buildings-->
+ <a-box color="red" src="#texture"depth="0.5" height="22" width="3" position="50 0.5 -37"></a-box>
+
+    <!--  <a-box color="tomato" src="#texture"depth="1" height="4" width="0.5" position="0.7 0.5 10"></a-box>-->
+    <!--  <a-box color="tomato" src="#texture"depth="1" height="4" width="0.5" position="0.7 0.5 10"></a-box>-->
     </a-scene>
   </body>
 </html>
